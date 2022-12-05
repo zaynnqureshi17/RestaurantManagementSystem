@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  secondnetcoreapp:
+    image: ${DOCKER_REGISTRY-}secondnetcoreapp
+    build:
+      context: .
+      dockerfile: SecondNetCoreApp\Dockerfile
